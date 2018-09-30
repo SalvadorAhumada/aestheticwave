@@ -1,0 +1,238 @@
+body {
+  position: absolute;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  padding-top: 80px;
+  height: 100%;
+  margin: 0;
+}
+/*--------------------MUSIC PLAYER-----------------*/
+
+.tooltiptext:hover {
+  cursor: pointer;
+}
+.playlist {
+  display: none;
+}
+/*--------------------INICIO HEADER Y NAVBAR----------*/
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+@supports (position: sticky) {
+  body {
+    padding-top: 0;
+  }
+
+  header {
+    position: fixed;
+  }
+
+}
+
+.navbar {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  transition: 0.5s ease;
+  background: #5DBCD2;
+}
+
+.navbar .nav {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  float: right;
+  margin-right: 5%;
+  margin-top: 0%;
+}
+
+.navbar .nav .item {
+  position: relative;
+  list-style: none;
+  display: inline-block;
+  font-size: 18px;
+  padding: 5px;
+  font-weight: 300;
+  line-height: 80px;
+  margin-right: 20px;
+  transition: 0.5s ease;
+  font-family: 'IBM Plex Mono', monospace;
+
+}
+/*color de menus*/
+.navbar .nav .item a {
+  text-decoration: none;
+  color: rgb(219, 72, 101);
+
+}
+
+.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-left: 5%;
+  width: 700px;
+  height: 70px;
+  transition: 0.5s ease;
+  font-size: 50px;
+  color: #FF8099;
+  font-family: 'Raleway', sans-serif; /*Fuente de titulo*/
+  text-shadow: 2px 2px 0 #6BFFFF, -2px -2px 0 rgb(203, 255, 250);
+}
+.main{
+  position: relative;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .navbar .logo {
+      position: relative;
+      top: 20%;
+      font-size:40px;
+              }
+  }
+  @media screen and (max-width: 500px) {
+    .navbar .logo {
+        position: relative;
+        top: 0%;
+        font-size:40px;
+                }
+    }
+  @media only screen and (min-device-width : 402px) and (max-device-width : 500px) {
+      .navbar .logo {
+          top: 40%;
+      }
+  }
+    
+
+.navbar .logo img {
+  display: none;
+}
+
+.scrolled {
+ transition: 0.5s ease;
+}
+
+/*TAMAÑO DE BARRA DESPUES DE SCROLL*/
+.scrolled.navbar {
+  height: 50px; 
+  transition: 0.5s ease;
+  background-color: rgb(12, 180, 180);
+
+}
+@media screen and (max-width: 500px) {
+  .scrolled.navbar {
+    height: 100px;
+   }
+  }
+/*POSICION DEL TEXTO DESPUES DE SCROLL*/
+.scrolled.navbar .nav .item {
+  line-height: 50%;
+  transition: 0.5s ease;
+}
+
+.scrolled.navbar .logo {
+  float: left;
+  display: inline-block;
+  margin-top: 0px;
+  margin-left: 5%;
+  width: 130px;
+  height: 40px;
+  transition: 0.5s ease;
+  font-size:15px;
+  line-height: 25px;
+}
+.github {
+  position: relative;
+  width: 25px;
+  top: 4px;
+}
+
+/*--------------------FINAL HEADER Y NAVBAR----------*/
+  .button{
+    background:no-repeat;
+    color:#db4865;
+    border:0;
+    font-size: 17px;
+  }
+  
+  .button:hover{
+    cursor: pointer;
+  }
+  
+  .modal{
+    display:none;
+    position: fixed;
+    z-index:1;
+    left: 0;
+    top:0;
+    width:100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  
+  .modal-content{
+    background-color:#e2daab;
+    margin: 10% auto;
+    width:70%;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2),0 7px 20px 0 rgba(0,0,0,0.17);
+    animation-name:modalopen;
+    animation-duration:1s;
+    border-radius: 10px;
+  }
+  
+  .modal-header h2, .modal-footer h3{
+    margin:0;
+  }
+  
+  .modal-header{
+    background:rgb(255, 255, 255);
+    padding:15px;
+    color:rgb(0, 0, 0);
+    border-radius: 10px 10px 0px 0px;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .modal-body{
+    padding:10px 20px;
+    font-size: 16px;
+    background: #9ad7e2;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .modal-footer{
+    background:rgb(242, 228, 245);
+    padding:10px;
+    color:rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    text-align: left;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  .closeBtn{
+    position: relative;
+    bottom: 10px;
+    color:#ccc;
+    float: right;
+    font-size:20px;
+    color:rgb(0, 0, 0);
+
+  }
+  
+  .closeBtn:hover,.closeBtn:focus{
+    color:#000;
+    text-decoration: none;
+    cursor:pointer;
+  }
+  
+  @keyframes modalopen{
+    from{ opacity: 0}
+    to {opacity: 1}
+  }
