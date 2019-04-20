@@ -1,0 +1,170 @@
+body,
+html {
+    margin:0;
+    height: 1200px;
+    background: white;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+ }
+     
+ .spinner-wrapper .spinner {
+     background: white;
+     height: 100%;
+     width:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+         }
+
+nav {
+    width: 100%;
+    color: #007c74;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-around;
+    transition: 1s;
+}
+
+nav .menu_main a {
+    color: #00dfcc;
+    text-decoration:none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    padding: 5px 25px;
+    transition: 0.4s;
+    font-size: calc(10px + 0.4vw);
+}
+
+nav .menu_main a:hover {
+    background: #00706750;
+    color: white;
+    padding: 5px 25px;
+    transition: 0.4s;
+}
+
+.nav-bg {
+    background-image: linear-gradient(rgba(255, 154, 247, 0.637), rgba(246, 45, 253, 0.658)),url("img/mike-gorrell-692333-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    transition: 1s;
+}
+
+h2 a {
+    margin: 0;
+    padding-left:20px;
+    font-family: 'Bungee', cursive;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 0 rgba(164, 107, 255, 0.829), -2px -2px 0 rgba(150, 0, 112, 0.637);
+    text-decoration: none;
+    color: rgb(0, 218, 226);
+}
+
+        @media only screen and (max-width: 888px) {
+            .menu_main {
+                        display: none;
+                    }
+            .menu_mobile {
+                font-size: 4vw;
+                text-shadow: 1px 1px 1px rgb(181, 255, 249);
+                cursor: pointer;
+            }
+                }
+
+        @media only screen and (min-width: 888px) {
+            .menu_mobile {
+                        display: none;
+                    }
+                }
+
+.app-name {
+    font-family: 'Nunito', sans-serif;
+    color: #007067;
+    font-size: calc(18px + 2vw);
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 30vw;
+    background-image: linear-gradient(rgba(231, 10, 213, 0.637), rgba(137, 0, 201, 0.918)),url("img/mike-gorrell-692333-unsplash.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.473);
+    font-family: 'Bungee', cursive;
+    font-size: calc(18px + 1vw);
+}
+
+        @media only screen and (max-width: 800px) {
+            header {
+                height: 50vw;
+            }
+        }
+
+.app-main {
+    grid-gap: 48px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    display: grid;
+    justify-content: center;
+}
+
+.card:hover, .card:focus {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.603);
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.card {
+    background-color: #d699ff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    font-family: 'Nunito', sans-serif;
+    transform: skew(15deg, 15deg);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.app-container {
+    margin: 0 auto;
+    max-width: 1800px;
+    padding: 10px;
+}
+
+.thumbnail {
+    height: auto;
+    width: 245px;
+}
+
+.app-header {
+    margin: 5rem;
+}
+
+.app-header p {
+    font-family: 'Nunito', sans-serif;
+    color: #007067;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
