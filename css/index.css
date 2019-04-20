@@ -93,6 +93,13 @@ h2 {
     padding: 5vh;
 }
 
+@media only screen and (max-width: 888px) {
+    h2 {
+                padding:1vh;
+                font-size: calc(1em + 0.2vw);
+            }
+
+    
 .subtitle_index {
     text-align:center;
     width: 100vw;
