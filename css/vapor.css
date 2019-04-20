@@ -193,5 +193,9 @@ h4 {
     text-align: center;
     background: rgb(190, 0, 181);
     }
+    .menu_main > a {
+    padding: 15px 25px!important;
+    font-size: 16px!important;
+}
 }
 
