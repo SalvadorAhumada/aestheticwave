@@ -113,6 +113,12 @@ header {
     font-size: calc(18px + 1vw);
 }
 
+        @media only screen and (max-width: 888px) {
+            header {
+                height: 60vh;
+            }
+        }
+
 .app-main {
     grid-gap: 48px;
     grid-template-columns: repeat(auto-fit, 300px);
