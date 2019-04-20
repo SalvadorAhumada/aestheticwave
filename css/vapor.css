@@ -56,6 +56,7 @@ nav .menu_main a:hover {
     background-size: cover;
     background-position: center center;
     transition: 1s;
+    height:100px;
 }
 
 h2 {
@@ -184,7 +185,7 @@ h4 {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 15vh;
+    top: 100px;
     }
 
     .menu_main {
