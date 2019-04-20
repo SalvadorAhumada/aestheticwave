@@ -11,4 +11,9 @@ $(window).scroll(function() {
 //Start AOS
 AOS.init();
 
+//menu mobil
+function menuMobil() {
+    var element = document.getElementById("menu_main");
+    element.classList.toggle("show");
+  } 
 
