@@ -178,3 +178,19 @@ h4 {
     text-align: center;
 }
 
+@media only screen and (max-width: 888px) {
+    .show {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 15vh;
+    }
+
+    .menu_main {
+    width: 100%;
+    text-align: center;
+    background: rgb(190, 0, 181);
+    }
+}
+
