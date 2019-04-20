@@ -52,7 +52,7 @@ nav .menu_main a:hover {
 }
 
 .nav-bg {
-    background-image: linear-gradient(rgba(255, 154, 247, 0.637), rgba(246, 45, 253, 0.658)),url("img/mike-gorrell-692333-unsplash.jpg");
+    background-image: linear-gradient(rgba(255, 154, 247, 0.637), rgba(246, 45, 253, 0.658)),url("../img/mike-gorrell-692333-unsplash.jpg");
     background-size: cover;
     background-position: center center;
     transition: 1s;
@@ -95,7 +95,7 @@ h2 a {
 header {
     width: 100%;
     height: 30vw;
-    background-image: linear-gradient(rgba(231, 10, 213, 0.637), rgba(137, 0, 201, 0.918)),url("img/mike-gorrell-692333-unsplash.jpg");
+    background-image: linear-gradient(rgba(231, 10, 213, 0.637), rgba(137, 0, 201, 0.918)),url("../img/mike-gorrell-692333-unsplash.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
     background-attachment:fixed;
     background-position: center;
