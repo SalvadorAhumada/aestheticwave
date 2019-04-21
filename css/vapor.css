@@ -205,7 +205,7 @@ h4 {
     .menu_main {
     width: 100%;
     text-align: center;
-    background: rgb(190, 0, 181);
+    background: #00b69e;
     }
     .menu_main > a {
     padding: 15px 25px!important;
