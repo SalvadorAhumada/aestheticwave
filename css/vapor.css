@@ -157,6 +157,7 @@ header {
 
 .app-container {
     margin: 0 auto;
+    width: 90vw;
     max-width: 1800px;
 }
 
