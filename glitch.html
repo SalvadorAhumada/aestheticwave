@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aestheticWave / GlitchArt</title>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Press+Start+2P|Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel = "stylesheet" type="text/css" href="css/glitch.css">
+    <script>
+        //Preload
+        $(document).ready(function() {
+            $(window).on("load", function() {
+                let preloaderFadeOutTime = 500;
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                    }
+                    hidePreloader();
+                    });
+                    });
+    </script>
+</head>
+<body>
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <img class="animated fadeIn" src="img/2I53.gif" width="300px">
+        </div>
+    </div>
+    <nav class="animated slideInDown">
+        <h2><a href="index.html">Aesthetic.Wave</a></h2>
+        <div class="menu_mobile" onclick="menuMobil()">
+            <i class="fas fa-ellipsis-h"></i>
+        </div>
+        <div class="menu_main" id="menu_main">
+            <a href="vapor.html">Vaporwave</a>
+            <a href="">Glitch Art</a>
+            <a href="">80s</a>
+            <a href="">Outrun</a>
+            <a href="">Retrofuturism</a>
+            <a href="">Futuresyth</a>
+        </div>
+    </nav>
+    <header>
+        <h3>Glitch_Art</h3>
+    </header>
+    <div class="app-container">
+        <div class="app-header animated fadeIn">
+            <h3 class="app-name" style="text-align:center;">
+                Most popular images this week
+            </h3>
+            <p style="text-align:center;">
+                click each image for its high res version
+            </p>
+        </div>
+        <main id="content" class="app-main">
+            <article class="card" v-for="post in posts" data-aos="fade-down">
+                <a :href="post.data.url">
+                    <h4 class="title">
+                        [ {{ post.data.title }} ]
+                    </h4>
+                    <span v-if="post.data.thumbnail != 'self'">
+                    </span>
+                    <img class="thumbnail" :src="post.data.thumbnail" />
+                    </span>
+                </a>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <a href="https://www.reddit.com/r/glitch_art/">/r/Glitch_Art</a>
+    </footer>
+</body>
+
+<script>
+// Grab some JSON goodness from Reddit.
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// https://github.com/mdn/fetch-examples/
+// Set the Request API URL.
+    var apiUrl = 'https://www.reddit.com/r/glitch_art/top/.json?=?sort=top&t=week';
+    // Build a card with a new Vue instance.
+    var card = new Vue({
+        el: '#content',
+        data: {
+            posts: null
+        },
+        created: function created() {
+            this.getRedditPosts();
+        },
+        mounted: function mounted() {
+        },
+        methods: {
+            getImage: function getImage() {
+                var items = this.getRedditPosts();
+            },
+            getRedditPosts: function getRedditPosts() {var
+                _this = this;
+    // Go fetch! 🚚
+    fetch(apiUrl)
+    .then(function (response) {return response.json();})
+    .then(function (json) {
+        _this.posts = json.data.children;
+    })
+    .catch(function (error) {
+        console.error(error);
+    });
+} } });
+</script>
+<script>
+// need this code for AOS to work with VUE
+//main.js
+import AOS from 'aos'
+import 'https://unpkg.com/aos@2.3.1/dist/aos.css'
+new Vue({
+el: '#app',
+created () {
+AOS.init()
+},
+render: h => h(App)
+})
+</script>
+<script src="js/glitch.js"></script>
+</html>
