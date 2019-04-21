@@ -104,7 +104,7 @@ h2 a {
 
 header {
     width: 100%;
-    height: 50vh;
+    height: 62vh;
     background-image: linear-gradient(rgba(231, 10, 213, 0.637), rgba(137, 0, 201, 0.918)),url("../img/mike-gorrell-692333-unsplash.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
     background-attachment:fixed;
