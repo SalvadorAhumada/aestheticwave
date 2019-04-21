@@ -141,6 +141,7 @@ header {
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
     font-family: 'Nunito', sans-serif;
     transform: skew(15deg, 15deg);
+    text-align:center;
 }
 
         @media only screen and (max-width: 888px) {
