@@ -58,7 +58,7 @@ nav .menu_main a:nth-child(1) {
 }
 
 .nav-bg {
-    background-image:linear-gradient(rgba(10, 231, 213, 0.788), rgba(0, 188, 201, 0.918)),url("../img/mike-gorrell-692333-unsplash.jpg");
+        background-image:linear-gradient(rgba(7, 248, 228, 0.6), rgba(0, 188, 201, 0.8)),url("../img/mike-gorrell-692333-unsplash.jpg");
     background-size: cover;
     transition: 1s;
     height:100px;
