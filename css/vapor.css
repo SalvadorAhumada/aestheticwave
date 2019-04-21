@@ -84,7 +84,7 @@ h2 a {
                         display: none;
                     }
             .menu_mobile {
-                font-size: 4vw;
+                font-size: 20px;
                 text-shadow: 1px 1px 1px rgb(181, 255, 249);
                 cursor: pointer;
                 color:#8f00e2;
