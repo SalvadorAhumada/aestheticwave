@@ -76,7 +76,7 @@ h2 a {
     font-variant: small-caps;
     text-shadow: 1px 1px 0 rgba(114, 28, 253, 0.829), -2px -2px 0 rgba(87, 0, 65, 0.637);
     text-decoration: none;
-    color: rgb(0, 218, 226);
+    color: #8f00e2;
 }
 
         @media only screen and (max-width: 888px) {
