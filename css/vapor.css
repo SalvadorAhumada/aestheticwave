@@ -58,7 +58,7 @@ nav .menu_main a:nth-child(1) {
 }
 
 .nav-bg {
-        background-image:linear-gradient(rgba(7, 248, 228, 0.6), rgba(0, 188, 201, 0.8)),url("../img/mike-gorrell-692333-unsplash.jpg");
+    background-image:linear-gradient(rgba(7, 248, 228, 0.6), rgba(0, 188, 201, 0.8)),url("../img/mike-gorrell-692333-unsplash.jpg");
     background-size: cover;
     transition: 1s;
     height:100px;
@@ -87,6 +87,7 @@ h2 a {
                 font-size: 4vw;
                 text-shadow: 1px 1px 1px rgb(181, 255, 249);
                 cursor: pointer;
+                color:#8f00e2;
             }
                 }
 
@@ -219,14 +220,14 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 154, 247, 0.637), rgba(246, 45, 253, 0.658)),url("../img/mike-gorrell-692333-unsplash.jpg");
+    background-image: linear-gradient(rgba(10, 231, 213, 0.541), rgba(0, 64, 201, 0.644)),url("../img/mike-gorrell-692333-unsplash.jpg");
     background-size: cover;
     background-position: center top;
     margin-top: 100px;
 }
 
 footer a {
-    color: #00dfcc;
+    color: #98249c;
     text-decoration: none;
     font-size: calc(20px + 1vw);
     font-family: 'Nunito', sans-serif;
