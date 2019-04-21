@@ -51,6 +51,12 @@ nav .menu_main a:hover {
     transition: 0.4s;
 }
 
+nav .menu_main a:nth-child(1) {
+    background: #00706750;
+    color: white;
+    padding: 5px 25px;
+}
+
 .nav-bg {
     background-image: linear-gradient(rgba(255, 154, 247, 0.637), rgba(246, 45, 253, 0.658)),url("../img/mike-gorrell-692333-unsplash.jpg");
     background-size: cover;
