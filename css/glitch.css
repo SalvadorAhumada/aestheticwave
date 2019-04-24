@@ -26,33 +26,40 @@ html {
 nav {
     width: 100%;
     height:100px;
+    color: #007c74;
     display: flex;
     align-items: center;
-    position: fixed;
-    z-index: 1;
     justify-content: space-around;
     transition: 1s;
+    position: absolute;
+    top: 0;
 }
 
 nav .menu_main a {
-    color: #3100a3;
+    color: #3100a3; 
     text-decoration:none;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inconsolata', monospace;
     font-weight: bolder;
-    padding: 5px 25px;
+    padding: 5px 1vw;
     transition: 0.4s;
     font-size: calc(10px + 0.4vw);
 }
 
 nav .menu_main a:hover {
-    background: #70006a50;
+    background: #00706750;
     color: white;
-    padding: 5px 25px;
+    padding: 5px 1vw;
     transition: 0.4s;
 }
 
-nav .menu_main a:nth-child(2) {
-    background: #70005d50;
+@media only screen and (min-width: 888px) {
+    .menu_mobile {
+                color:rgba(255, 0, 0, 0);
+            }
+}
+
+nav .menu_main a:nth-child(1) {
+    background: #00706750;
     color: white;
     padding: 5px 25px;
 }
@@ -63,6 +70,8 @@ nav .menu_main a:nth-child(2) {
     transition: 1s;
     height:100px;
     background-position:center;
+    position: fixed!important;
+    z-index: 1;
 }
 
 h2 {
@@ -71,12 +80,21 @@ h2 {
 
 h2 a {
     margin: 0;
-    padding-left:20px;
-    font-family: 'Bungee', cursive;
+    padding-left:5px;
+    font-family: 'Monoton', cursive;
     font-variant: small-caps;
-    text-shadow: 1px 1px 0 #1cc8fdd3, -2px -2px 0 rgba(16, 0, 87, 0.637);
+    text-shadow: 1px 1px 0 rgba(114, 28, 253, 0.829), -2px -2px 0 rgba(87, 0, 65, 0.637);
     text-decoration: none;
     color: #0d00c7;
+    font-weight:lighter;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.show-menu {
+    display: block!important;
 }
 
         @media only screen and (max-width: 888px) {
@@ -87,44 +105,40 @@ h2 a {
                 font-size: 20px;
                 text-shadow: 1px 1px 1px rgb(181, 255, 249);
                 cursor: pointer;
-                color:#0d00c7;
+                color:#8f00e2;
             }
                 }
 
-        @media only screen and (min-width: 888px) {
-            .menu_mobile {
-                        display: none;
-                    }
-                }
-
 .app-name {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inconsolata', monospace;
     color: #700061;
     font-size: calc(18px + 2vw);
     margin: 0;
 }
 
 header {
+    position: relative;
+    font-family: 'Monoton', cursive;
+    font-weight:lighter;
     width: 100%;
-    height: 62vh;
+    height: 400px;
     background-image: linear-gradient(#ff00f280, rgba(136, 0, 141, 0.7)),url("../img/sachit-rathi-472309-unsplash.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
     background-attachment:fixed;
     background-position: center;
     background-size: cover;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
     color: rgba(255, 255, 255, 0.473);
-    font-family: 'Bungee', cursive;
-    font-size: calc(18px + 1vw);
+    font-size: calc(14px + 1vw);
 }
 
-        @media only screen and (max-width: 888px) {
-            header {
-                height: 70vh;
-            }
-        }
+header h3 {
+    text-align: center;
+    font-size: calc(16px + 3vw);
+    font-weight:lighter;
+}
 
 .app-main {
     grid-gap: 48px;
@@ -141,15 +155,18 @@ header {
 
 .card {
     background-color: #ff3dff;
-    border-radius: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 24px;
     transition: -webkit-transform 0.2s ease-in;
     transition: transform 0.2s ease-in;
     transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inconsolata', monospace;
     transform: skew(15deg, 15deg);
     text-align:center;
+}
+
+.card h4 {
+    color:#98249c;
 }
 
         @media only screen and (max-width: 888px) {
@@ -175,17 +192,12 @@ header {
 }
 
 .app-header {
-    margin: 5rem;
+    margin: 10rem 0;
 }
 
-        @media only screen and (max-width: 888px) {
-            .app-header {
-                margin:1rem;
-            }
-        }
 
 .app-header p {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inconsolata', monospace;
     color: #700061;
     margin: 0;
 }
@@ -206,7 +218,7 @@ h4 {
     .menu_main {
     width: 100%;
     text-align: center;
-    background: #ff00f2;
+    background: #00b69e;
     }
     .menu_main > a {
     padding: 17px 25px !important;
@@ -231,5 +243,5 @@ footer a {
     color: #000baa;
     text-decoration: none;
     font-size: calc(20px + 1vw);
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Inconsolata', monospace;
 }
