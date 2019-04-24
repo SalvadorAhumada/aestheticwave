@@ -65,7 +65,7 @@ nav .menu_main a:nth-child(3) {
 }
 
 .nav-bg {
-    baclground-image:linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg")
+    background-image:linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg")
     background-size: cover;
     transition: 1s;
     height:100px;
