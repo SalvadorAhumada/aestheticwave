@@ -65,7 +65,7 @@ nav .menu_main a:nth-child(3) {
 }
 
 .nav-bg {
-    linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg")
+    baclground-image:linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg")
     background-size: cover;
     transition: 1s;
     height:100px;
@@ -105,7 +105,7 @@ h2 a {
                 font-size: 20px;
                 text-shadow: 1px 1px 1px rgb(181, 255, 249);
                 cursor: pointer;
-                color:#8f00e2;
+                color:#00e2d2;
             }
                 }
 
@@ -218,7 +218,7 @@ h4 {
     .menu_main {
     width: 100%;
     text-align: center;
-    background: #00b69e;
+    background: #00d20a;
     }
     .menu_main > a {
     padding: 17px 25px !important;
@@ -233,7 +233,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg");
+    background-image:linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg");
     background-size: cover;
     background-position: center top;
     margin-top: 100px;
