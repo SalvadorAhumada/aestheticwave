@@ -1,0 +1,247 @@
+body,
+html {
+    margin:0;
+    height: 1200px;
+    background: white;
+}
+
+.spinner-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+ }
+     
+ .spinner-wrapper .spinner {
+     background: white;
+     height: 100%;
+     width:100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+         }
+
+nav {
+    width: 100%;
+    height:100px;
+    color: #007c74;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    position: absolute;
+    top: 0;
+}
+
+nav .menu_main a {
+    color: #3100a3; 
+    text-decoration:none;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bolder;
+    padding: 5px 1vw;
+    transition: 0.4s;
+    font-size: calc(10px + 0.4vw);
+}
+
+nav .menu_main a:hover {
+    background: #00706750;
+    color: white;
+    padding: 5px 1vw;
+    transition: 0.4s;
+}
+
+@media only screen and (min-width: 888px) {
+    .menu_mobile {
+                color:rgba(255, 0, 0, 0);
+            }
+}
+
+nav .menu_main a:nth-child(2) {
+    background: #00706750;
+    color: white;
+    padding: 5px 25px;
+}
+
+.nav-bg {
+    background-image:linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    background-size: cover;
+    transition: 1s;
+    height:100px;
+    background-position:center;
+    position: fixed!important;
+    z-index: 1;
+}
+
+h2 {
+    margin:0
+}
+
+h2 a {
+    margin: 0;
+    padding-left:5px;
+    font-family: 'Monoton', cursive;
+    font-variant: small-caps;
+    text-shadow: 1px 1px 0 rgba(114, 28, 253, 0.829), -2px -2px 0 rgba(87, 0, 65, 0.637);
+    text-decoration: none;
+    color: #0d00c7;
+    font-weight:lighter;
+}
+
+.menu_mobile {
+    display: none;
+}
+
+.show-menu {
+    display: block!important;
+}
+
+        @media only screen and (max-width: 888px) {
+            .menu_main {
+                        display: none;
+                    }
+            .menu_mobile {
+                font-size: 20px;
+                text-shadow: 1px 1px 1px rgb(181, 255, 249);
+                cursor: pointer;
+                color:#8f00e2;
+            }
+                }
+
+.app-name {
+    font-family: 'Inconsolata', monospace;
+    color: #700061;
+    font-size: calc(18px + 2vw);
+    margin: 0;
+}
+
+header {
+    position: relative;
+    font-family: 'Monoton', cursive;
+    font-weight:lighter;
+    width: 100%;
+    height: 400px;
+    background-image: linear-gradient(#ff00f280, rgba(136, 0, 141, 0.7)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
+    background-attachment:fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.473);
+    font-size: calc(14px + 1vw);
+}
+
+header h3 {
+    text-align: center;
+    font-size: calc(16px + 3vw);
+    font-weight:lighter;
+}
+
+.app-main {
+    grid-gap: 48px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    display: grid;
+    justify-content: center;
+}
+
+.card:hover, .card:focus {
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.603);
+    -webkit-transform: scale(1.025);
+    transform: scale(1.025);
+}
+
+.card {
+    background-color: #ff3dff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    transition: -webkit-transform 0.2s ease-in;
+    transition: transform 0.2s ease-in;
+    transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
+    font-family: 'Inconsolata', monospace;
+    transform: skew(15deg, 15deg);
+    text-align:center;
+}
+
+.card h4 {
+    color:#98249c;
+}
+
+        @media only screen and (max-width: 888px) {
+            .card {
+                transform:none;
+            }
+        }
+
+.card a {
+    color: white;
+    text-decoration: none;
+}
+
+.app-container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1800px;
+}
+
+.thumbnail {
+    height: auto;
+    width: 245px;
+}
+
+.app-header {
+    margin: 10rem 0;
+}
+
+
+.app-header p {
+    font-family: 'Inconsolata', monospace;
+    color: #700061;
+    margin: 0;
+}
+
+h4 {
+    text-align: center;
+}
+
+@media only screen and (max-width: 888px) {
+    .show {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    }
+
+    .menu_main {
+    width: 100%;
+    text-align: center;
+    background: #00b69e;
+    }
+    .menu_main > a {
+    padding: 17px 25px !important;
+    font-size: 17px !important;
+}
+}
+
+
+footer {
+    width:100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    background-size: cover;
+    background-position: center top;
+    margin-top: 100px;
+}
+
+footer a {
+    color: #000baa;
+    text-decoration: none;
+    font-size: calc(20px + 1vw);
+    font-family: 'Inconsolata', monospace;
+}
