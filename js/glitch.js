@@ -1,12 +1,14 @@
-//change background color on scroll
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-    if (scroll >= 350) {
-        $("nav").addClass("nav-bg");
-        $("header").addClass("fix");
-    } else {
-        $("nav").removeClass("nav-bg");
-        $("header").removeClass("fix");
+    if (scroll >= 400) {
+         $("nav").addClass("nav-bg");
+         $("nav").addClass("fadeIn");
+         $("nav").removeClass("slideInDown");
+         $(".menu_mobile").addClass("show-menu");
+     } else {
+         $("nav").removeClass("nav-bg");
+         $("nav").removeClass("fadeIn");
+         $(".menu_mobile").removeClass("show-menu");
     }
 });
 
@@ -17,4 +19,4 @@ AOS.init();
 function menuMobil() {
     var element = document.getElementById("menu_main");
     element.classList.toggle("show");
-  } 
+} 
