@@ -154,7 +154,7 @@ header h3 {
 }
 
 .card {
-    background-color: #ff3dff;
+    background-color: #a4ffa8;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 24px;
     transition: -webkit-transform 0.2s ease-in;
@@ -218,7 +218,7 @@ h4 {
     .menu_main {
     width: 100%;
     text-align: center;
-    background: #00d20a;
+    background: #a4ffa8;
     }
     .menu_main > a {
     padding: 17px 25px !important;
