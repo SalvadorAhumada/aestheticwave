@@ -65,7 +65,7 @@ nav .menu_main a:nth-child(3) {
 }
 
 .nav-bg {
-    background-image:linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    background-image:linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/vintage-2807243_1920.jpg");
     background-size: cover;
     transition: 1s;
     height:100px;
@@ -122,7 +122,7 @@ header {
     font-weight:lighter;
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(#ff00f280, rgba(136, 0, 141, 0.7)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    background-image: linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
     background-attachment:fixed;
     background-position: center;
@@ -233,7 +233,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/sachit-rathi-472309-unsplash.jpg");
+    background-image: linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url(".../img/vintage-2807243_1920.jpg");
     background-size: cover;
     background-position: center top;
     margin-top: 100px;
