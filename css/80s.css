@@ -111,7 +111,6 @@ h2 a {
 
 .app-name {
     font-family: 'Inconsolata', monospace;
-    color: #700061;
     font-size: calc(18px + 2vw);
     margin: 0;
 }
