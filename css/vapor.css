@@ -137,6 +137,7 @@ header {
 header h3 {
     text-align: center;
     font-size: calc(16px + 3vw);
+    font-weight:lighter;
 }
         @media only screen and (max-width: 888px) {
             header {
