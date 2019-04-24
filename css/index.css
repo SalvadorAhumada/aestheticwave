@@ -178,3 +178,19 @@ footer {
 footer a {
     color:inherit;
 }
+
+.under_construction {
+    position: relative;
+}
+
+.index_container p {
+    position:absolute;
+    left:-120px;
+    top: -10px;
+    color: white;
+    font-size: 1.2vw;
+    transform: rotate(-15deg);
+    font-family: 'Press Start 2P', cursive;
+    color: rgb(255, 0, 85);
+    text-shadow: 2px 2px 1px black;
+}
