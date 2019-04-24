@@ -139,11 +139,6 @@ header h3 {
     font-size: calc(16px + 3vw);
     font-weight:lighter;
 }
-        @media only screen and (max-width: 888px) {
-            header {
-                height: 70vh;
-            }
-        }
 
 .app-main {
     grid-gap: 48px;
