@@ -1,161 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>frontEndBasics</title>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Roboto:100|Pacifico|Press+Start+2P" rel="stylesheet"> 
+    <title>aestheticWave / Vaporwave</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Press+Start+2P|Inconsolata" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js'></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel = "stylesheet" type="text/css" href="css/80s.css">
+    <script>
+        //Preload
+        $(document).ready(function() {
+            $(window).on("load", function() {
+                let preloaderFadeOutTime = 500;
+                function hidePreloader() {
+                    var preloader = $('.spinner-wrapper');
+                    preloader.fadeOut(preloaderFadeOutTime);
+                    }
+                    hidePreloader();
+                    });
+                    });
+    </script>
 </head>
-<style>
-    :root {
-        --principal:#ff9036;
-        --secundario:#ffffff;
-    }
-
-    body,
-    html {
-        height: 100%;
-        margin: 0;
-        position: relative;
-    }
-
-    nav {
-        width:100%;
-        height: 60px;
-        position:fixed;
-        z-index: 1;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        border-bottom: 1px solid white;
-    }
-
-    aside {
-        width:250px;
-        position: fixed;
-        color: white;
-        font-family: 'Press Start 2P', cursive;
-        margin: 80px 10px;
-        border: 1px solid white;
-        border-radius: 20px;
-        padding: 10px;
-    }
-
-    aside h3 {
-        text-align: center;
-        font-weight: lighter;
-        text-shadow: 1px 1px 1px black;
-    }
-
-    main {
-        position: absolute;
-        left: 290px;
-        top:80px;
-    }
-
-    nav h2 {
-        color: white;
-        font-family: 'Pacifico', cursive;
-        margin: 0 10px;
-        font-weight: lighter;
-        text-shadow: 1px 1px 1px black;
-        width: 270px;
-        text-align: center;
-    }
-
-    nav button {
-        border: none;
-        margin: 0 20px;
-        font-family: 'Press Start 2P', cursive;
-        color: var(--principal);
-        background: var(--secundario);
-        padding: 5px 20px;
-        cursor: pointer;
-    }
-
-    nav button:hover {
-        cursor:pointer;
-        animation:fade 1s linear;
-        }
-
-@keyframes fade {
-  0% {
-    background: var(--secundario); 
-  }
-  50% { 
-    background: var(--principal); 
-    color: var(--secundario);
-  }
-  100% {
-    background: var(--secundario);
-  }
-}
-
-.menu-content p,
-.menu-content a {
-    color: white;
-    text-decoration: none;
-    font-size: 12px;
-    transition: 0.3s;
-}
-
-.menu-content p:hover {
-    margin-left: 10px;
-    transition: 0.3s;
-}
-
-
-</style>
-<body class="animated fadeIn">   
-    <nav>
-        <h2 class="animated slideInDown">
-            FrontEndBasics
-        </h2>
-
-        <div class="animated slideInDown">
-            <button>
-                CSS
-            </button>
+<body>
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <img class="animated fadeIn" src="img/2I53.gif" width="300px">
         </div>
-        <div class="animated slideInDown">
-            <button id="javascript">
-            Javascript
-        </button>
+    </div>
+    <header>
+        <nav class="animated slideInDown">
+        <h2><a href="index.html">Aesthetic.Wave</a></h2>
+        <div class="menu_mobile" onclick="menuMobil()">
+            <i class="fas fa-ellipsis-h"></i>
         </div>
-        <div class="animated slideInDown">
-            <button>
-            Ajax
-        </button>
+        <div class="menu_main" id="menu_main">
+            <a href="vapor.html">Vaporwave</a>
+            <a href="glitch.html">Glitch_art</a>
+            <a href="#">80s</a>
+            <a href="">Outrun</a>
+            <a href="">Retrofuturism</a>
+            <a href="">Futuresyth</a>
         </div>
     </nav>
-    <aside class="animated slideInLeft">
-        <h3>Menu</h3>
-        <div class="menu-content">
-            <p><a href="#one">Gradient text</a></p> 
-            <p><a href="#two">Center text without flexbox</a></p>
-            <p><a href="two">Animations</a></p>
-            <p><a href="two">Moving stuff</a></p>
-            <p><a href="two">Manipulating the BODY</a></p>
-            <p><a href="two">Time delays</a></p>
+    <div>
+        <h3>Vaporwave</h3>
+    </div>
+    </header>
+    <div class="app-container">
+        <div class="app-header animated fadeIn">
+            <h3 class="app-name" style="text-align:center;">
+                Most popular images this week
+            </h3>
+            <p style="text-align:center;">
+                click each image for its high res version
+            </p>
         </div>
-    </aside>
-    <main>
-    </main>
-    <script>
-                /*cargar con ajax las paginas*/   
-                $(document).ready(function(){
-        var url = "/3.html";
-        var urlTwo = "/css.html";
-        $("#javascript").on("click", function() {
-            setTimeout(() => $('body').load(url), 1000);
-        });
-        $("#css").on("click", function() {
-            setTimeout(() => $('body').load(urlTwo), 2200);
-        });
-    });</script>
+        <main id="content" class="app-main">
+            <article class="card" v-for="post in posts" data-aos="fade-down">
+                <a :href="post.data.url">
+                    <h4 class="title">
+                        [ {{ post.data.title }} ]
+                    </h4>
+                    <span v-if="post.data.thumbnail != 'self'">
+                    </span>
+                    <img class="thumbnail" :src="post.data.thumbnail" />
+                    </span>
+                </a>
+            </article>
+        </main>
+    </div>
+    <footer>
+        <a href="https://www.reddit.com/r/glitch_art/">/r/80sdesign</a>
+    </footer>
 </body>
+
+<script>
+// Grab some JSON goodness from Reddit.
+// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// https://github.com/mdn/fetch-examples/
+// Set the Request API URL.
+    var apiUrl = 'https://www.reddit.com/r/80sdesign/top/.json?=?sort=top&t=week';
+
+    // Build a card with a new Vue instance.
+    var card = new Vue({
+        el: '#content',
+        data: {
+            posts: null
+        },
+        created: function created() {
+            this.getRedditPosts();
+        },
+        mounted: function mounted() {
+
+        },
+        methods: {
+            getImage: function getImage() {
+                var items = this.getRedditPosts();
+            },
+            getRedditPosts: function getRedditPosts() {var
+                _this = this;
+
+    // Go fetch! 🚚
+    fetch(apiUrl)
+    .then(function (response) {return response.json();})
+    .then(function (json) {
+        _this.posts = json.data.children;
+    })
+    .catch(function (error) {
+        console.error(error);
+    });
+} } });
+</script>
+<script>
+// need this code for AOS to work with VUE
+//main.js
+import AOS from 'aos'
+import 'https://unpkg.com/aos@2.3.1/dist/aos.css'
+new Vue({
+el: '#app',
+created () {
+AOS.init()
+},
+render: h => h(App)
+})
+</script>
+<script src="js/80s.js"></script>
 </html>
