@@ -65,7 +65,7 @@ nav .menu_main a:nth-child(3) {
 }
 
 .nav-bg {
-    background-image:linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url("../img/vintage-2807243_1920.jpg");
+    linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg")
     background-size: cover;
     transition: 1s;
     height:100px;
@@ -193,12 +193,12 @@ header h3 {
 
 .app-header {
     margin: 10rem 0;
+    color:#16a700;
 }
 
 
 .app-header p {
     font-family: 'Inconsolata', monospace;
-    color: #700061;
     margin: 0;
 }
 
@@ -233,7 +233,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(rgba(255, 89, 247, 0.473), rgba(252, 105, 232, 0.726)),url(".../img/vintage-2807243_1920.jpg");
+    linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg");
     background-size: cover;
     background-position: center top;
     margin-top: 100px;
