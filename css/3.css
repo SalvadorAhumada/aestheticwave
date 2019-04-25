@@ -1,0 +1,338 @@
+    :root {
+        --principal:#fde452;
+        --secundario:#ffffff;
+    }
+
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+        position: relative;
+    }
+  
+    nav {
+        width:100%;
+        height: 60px;
+        position:fixed;
+        z-index: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border-bottom: 1px solid white;
+        overflow-y: auto;
+    }
+
+    #sidemenu {
+        width:250px;
+        position: fixed;
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        margin: 80px 10px;
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    aside {
+        position: fixed;
+        left: -300px;
+        transition: 1s;
+    }
+
+    .aside-show {
+        left:0;
+        transition:1s;
+    }
+        
+        aside h3 {
+        text-align: center;
+        font-weight: lighter;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    main {
+        position: absolute;
+        left: 290px;
+        top:80px;
+        color: white;
+    }
+
+    nav h2 {
+        color: white;
+        font-family: 'Pacifico', cursive;
+        margin: 0 10px;
+        font-weight: lighter;
+        text-shadow: 1px 1px 1px black;
+        width: 270px;
+        text-align: center;
+    }
+
+    nav button {
+        border: none;
+        margin: 0 36px;
+        font-family: 'Press Start 2P', cursive;
+        color: var(--principal);
+        background: var(--secundario);
+        padding: 5px 30px;
+        cursor: pointer;
+    }
+
+    nav button:hover {
+        cursor:pointer;
+        animation:fade 1s linear;
+        }
+
+@keyframes fade {
+  0% {
+    background: var(--secundario); 
+  }
+  50% { 
+    background: var(--principal); 
+    color: var(--secundario);
+  }
+  100% {
+    background: var(--secundario);
+  }
+}
+
+.menu-content p,
+.menu-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    transition: 0.3s;
+}
+
+.menu-content p:hover {
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+.content-body {
+    font-family: 'Montserrat', sans-serif;
+    border: 1px solid white;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    width: 60vw;
+    max-width: 1200px;
+}
+
+ pre {
+    border: 1px solid white;
+    width: 80%;
+    margin: 0 auto;
+    white-space:pre-line;
+}
+
+.content-body h3 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-weight: lighter;
+}
+
+#two {
+    background: none;
+    color: white;
+}
+
+#two:hover {
+    animation: none;
+    cursor: initial;
+}
+
+.navbar {
+    background: var(--principal);
+    z-index: 2;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  margin: 50px 0;
+}
+
+.flex button {
+  border: 2px solid var(--secundario);
+  background: none;
+  padding: 4px 15px;
+  margin: 4px;
+  cursor: pointer;
+  color: var(--text); 
+}
+
+.black {
+  background: var(--text);
+  color: var(--amarillo);
+  padding: 10px;
+  margin-bottom: 2px;
+  display: none;
+}
+
+.yellow {
+  color: var(--text);
+  border: 1px solid var(--text);
+  padding: 10px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.refresh {
+  background: none;
+  color: var(--amarillo);
+  border: 2px solid var(--text);
+  margin: 10px;
+  padding: 5px;
+  background: var(--text);
+  cursor: pointer;
+}
+
+.show {
+  display:block;
+}
+
+.hidden {
+  display:none;
+}
+
+.black {
+    background: var(--secundario);
+    color: var(--principal);
+}
+
+.refresh {
+  background: none;
+  color: var(--amarillo);
+  border: 2px solid var(--text);
+  margin: 10px;
+  padding: 5px;
+  background: var(--text);
+  cursor: pointer;
+}
+
+.footer-section {
+  text-align: center;
+}
+
+#section-one {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -80px;
+    z-index: 1;
+}
+
+#section-two {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -80px;
+
+}
+
+.anchor-two {
+    position: relative;
+    z-index: 1;
+}
+
+.lights {
+    background: #9e8706;
+}
+
+h4 {
+    text-align: center;
+}
+
+#block,
+#blockTwo,
+#blockThree {
+  width:50px;
+  height:50px;
+  background:rgb(255, 255, 255);
+  margin:5px;
+}
+
+.hide-block {
+  background: var(--principal)!important;
+}
+
+/*mobile-menu*/
+
+#menu-mobile div {
+    width:50px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+#menu-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 21px;
+}
+
+.menu--open {
+    position: fixed;
+    left:-282px;
+    transition:1s;
+}
+
+@media only screen and (max-width: 900px) {
+  main {
+      width:100%;
+      position: static;
+      padding-top: 75px;
+    }
+
+
+    .content-body {
+        width: 95%;
+        margin: 20px auto;
+    }
+
+    #menu-mobile{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 10px;
+        position: fixed;
+        background: var(--principal);
+    }
+
+    #sidemenu {
+        width:97%;
+        margin: 95px 0;
+        background: var(--principal);
+        transition: 1s;
+        left: 0;
+    }
+}
+
+.contact {
+    position: fixed;
+    bottom: 20px;
+    right:30px;
+    font-family: 'Press Start 2P', cursive;
+    font-size:12px;
+    text-shadow: 1px 1px 1px black;
+    transition: .5s;
+}
+
+.contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact:hover {
+    transform: scale(1.6);
+    transition: .5s;
+}
