@@ -36,7 +36,7 @@ nav {
 }
 
 nav .menu_main a {
-    color: #94e1ff;
+    color: #001aad;
     text-decoration:none;
     font-family: 'Inconsolata', monospace;
     font-weight: bolder;
@@ -80,13 +80,13 @@ h2 {
 
 h2 a {
     margin: 0;
-    padding-left:5px;
+    padding-left: 5px;
     font-family: 'Monoton', cursive;
     font-variant: small-caps;
-    text-shadow: 1px 1px 0 rgba(0, 197, 190, 0.83), -2px -2px 0 rgba(0, 87, 66, 0.64);
+    text-shadow: 1px 1px 0 rgba(79, 136, 252, 0.83), -2px -2px 0 rgba(126, 159, 255, 0.64);
     text-decoration: none;
-    color: #00c7c7;
-    font-weight:lighter;
+    color: #001aad;
+    font-weight: lighter;
 }
 
 .menu_mobile {
@@ -121,7 +121,7 @@ header {
     font-weight:lighter;
     width: 100%;
     height: 400px;
-    background-image: linear-gradient(#21ff0080, rgba(3, 135, 0, 0.63)),url("../img/vintage-2807243_1920.jpg");
+    linear-gradient(#ff480099, rgba(255, 212, 27, 0.77)),url("../img/steven-roe-1058281-unsplash.jpg");
     box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.26);
     background-attachment:fixed;
     background-position: center;
@@ -192,7 +192,11 @@ header h3 {
 
 .app-header {
     margin: 10rem 0;
-    color:#16a700;
+    color:#fc4a10;
+
+}
+
+};
 }
 
 
